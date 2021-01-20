@@ -255,6 +255,10 @@
         var segments = key.split('.');
         var source = segments[0].replace(/\//g, '.');
 
+        if (segments.length > 1 && segments[segments.length - 1] === '') {
+            segments[segments.length - 2] += '.'
+        }
+
         return {
             source: locale + '.' + source,
             sourceFallback: this.getFallback() + '.' + source,
@@ -272,7 +276,7 @@
      */
     Lang.prototype._getMessage = function(key, locale) {
         locale = locale || this.getLocale();
-        
+
         key = this._parseKey(key, locale);
 
         // Ensure message source exists.
@@ -322,7 +326,7 @@
         for (var i = 0, n = parts.length; i < n; ++i) {
             var currentKey = parts.slice(0, i + 1).join('.');
             var restOfTheKey = parts.slice(i + 1, parts.length).join('.')
-            
+
             if (obj[currentKey]) {
                 return this._getValueInKey(obj[currentKey], restOfTheKey)
             }
