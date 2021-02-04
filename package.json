@@ -17,7 +17,7 @@
     "type": "git",
     "url": "git://github.com/reportei/Lang.js.git"
   },
-  "author": "rmariuzzo",
+  "author": "reportei",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/reportei/Lang.js/issues"
