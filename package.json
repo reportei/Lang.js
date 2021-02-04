@@ -1,5 +1,5 @@
 {
-  "name": "reportei/lang.js",
+  "name": "@reportei/lang.js",
   "version": "1.1.14",
   "description": "Laravel's Lang in JavaScript!",
   "main": "src/lang.js",
