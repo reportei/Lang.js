@@ -252,17 +252,10 @@
             return null;
         }
 
-        var segments = key.split('.');
-        var source = segments[0].replace(/\//g, '.');
-
-        if (segments.length > 1 && segments[segments.length - 1] === '') {
-            segments[segments.length - 2] += '.'
-        }
-
         return {
-            source: locale + '.' + source,
-            sourceFallback: this.getFallback() + '.' + source,
-            entries: segments.slice(1)
+            source: locale + '.' + key,
+            sourceFallback: this.getFallback() + '.' + key,
+            entries: []
         };
     };
 
