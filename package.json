@@ -1,5 +1,5 @@
 {
-  "name": "lang.js",
+  "name": "reportei/lang.js",
   "version": "1.1.14",
   "description": "Laravel's Lang in JavaScript!",
   "main": "src/lang.js",
@@ -15,12 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/rmariuzzo/Lang.js.git"
+    "url": "git://github.com/reportei/Lang.js.git"
   },
   "author": "rmariuzzo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rmariuzzo/Lang.js/issues"
+    "url": "https://github.com/reportei/Lang.js/issues"
   },
   "devDependencies": {
     "jasmine-node": "~1.14.3",
